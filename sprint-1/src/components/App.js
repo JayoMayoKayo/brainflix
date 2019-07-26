@@ -1,6 +1,5 @@
 import React from 'react';
-import logo from '../stylings/logo.svg';
-import '../stylings/App.css';
+import '../stylings/App.scss';
 import Header from './Header';
 import VideoSection from './VideoSection'
 import CommentSection from './CommentSection';
