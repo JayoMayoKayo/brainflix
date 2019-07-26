@@ -1,14 +1,23 @@
 import React from 'react';
-import '../stylings/Header/scss';
+import '../stylings/Header.scss';
 import App from './App';
 
-class Hello extends React.Component {
+class Header extends React.Component {
   render() {
     return (
       <>
-        <div>Hello World!</div>
+        <div>Header Parent<HeaderChild /></div>
       </>  
     );
   }
 }
-export default App;
+class HeaderChild extends React.Component {
+  render() {
+    return (
+      <>
+        <div>Header Child</div>
+      </>
+    )
+  }
+}
+export default Header;

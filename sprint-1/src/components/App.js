@@ -1,12 +1,27 @@
 import React from 'react';
 import logo from '../stylings/logo.svg';
 import '../stylings/App.css';
-import '../components/Header';
+import Header from './Header';
+import VideoSection from './VideoSection'
+import CommentSection from './CommentSection';
+import SideVideos from './SideVideos';
 
 function App() {
   return (
-    <>  
-      <div className="App">
+    <>
+      <div>
+        <Header />
+      </div>
+      <div>
+        <VideoSection />
+      </div> 
+      <div>
+        <CommentSection />
+      </div>
+      <div>
+        <SideVideos />
+      </div>  
+{/*   <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -21,10 +36,7 @@ function App() {
             Learn React
           </a>
         </header>
-      </div>
-      <div>
-        <Header />
-      </div> 
+      </div> */}
     </>
   );
 }
