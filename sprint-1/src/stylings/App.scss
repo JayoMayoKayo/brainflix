@@ -16,6 +16,93 @@
       //url('../Fonts/Alternative\ files/AvenirNextLTPro-Bold.ttf') format('truetype'),
       url('https://fonts.google.com/specimen/Roboto');
 }
+
+//Global Margin
+@mixin margin80 {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+@mixin margin64 {
+  margin-left: 64px;
+  margin-right: 64px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+@mixin margin56 {
+  margin-left: 56px;
+  margin-right: 56px;
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+@mixin margin48 {
+  margin-left: 48px;
+  margin-right: 48px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+@mixin margin40 {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+@mixin margin32 {
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+@mixin margin24 {
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+@mixin margin16 {
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+@mixin margin8 {
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+@mixin margin4 {
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+
+//Global Colors
+$black: #323232; //Paragraph Text
+$silver: #AFAFAF; //Text Label Style
+$mercury: #E1E1E1; //Text field border
+$alabaster: #FAFAFA; // Text Field Background Fill
+//Instock Colors
+$black: #323232; //Navigation background fill
+$inStockBlue: #004892;  //Primary CTA and Text link
+$inStockBlueDark: #002F5F; //Primarly CTA Hover 
+//BrainFlix
+$black: #323232; //Navigation background fill
+$brainFlixBlue: #0095FF; //Primary CTA and Text Link
+$brainFlixBlueDark: #0065AD; //Primary CTA Hover
+//BandSite
+$black: #323232; //Navigation background fill
+$black: #323232; //Primary CTA
+$brainFlixBlueDark: #0065AD; //Primary CTA Hover
+ 
+
+.body {
+  font-family: "avenirNextRegular";
+}
+
 .App {
   text-align: center;
 }
