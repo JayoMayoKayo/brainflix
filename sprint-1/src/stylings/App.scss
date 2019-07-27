@@ -1,21 +1,5 @@
-@font-face {
-  font-family: "avenirNextRegular";
-  src: url('../Fonts/Linotype\ -\ AvenirNextLTPro-Regular.otf') format('opentype'),
-      //url('../Fonts/Alternative\ files/AvenirNextLTPro-Regular.ttf') format('truetype'),
-      url('https://fonts.google.com/specimen/Roboto');
-}
-@font-face {
-  font-family: "avenirNextDemiBold";
-  src: url('../Fonts/Linotype\ -\ AvenirNextLTPro-Demi.otf') format('opentype'),
-      //url('../Fonts/Alternative\ files/avenirNextDemiBold.ttf') format('truetype'),
-      url('https://fonts.google.com/specimen/Roboto');
-}
-@font-face {
-  font-family: "avenirNextBold";
-  src: url('../Fonts/Linotype\ -\ AvenirNextLTPro-Bold.otf') format('opentype'),
-      //url('../Fonts/Alternative\ files/AvenirNextLTPro-Bold.ttf') format('truetype'),
-      url('https://fonts.google.com/specimen/Roboto');
-}
+//Importing index scss files from index.scss
+//@import "../index.scss";
 
 //Global Margin
 @mixin margin80 {

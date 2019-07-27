@@ -1,7 +1,9 @@
 import React from 'react';
 import '../stylings/Header.scss';
 import App from './App';
-import BrainflixLogo from '../stylings/assets/Logo-brainflix.svg';
+import BrainflixLogo from '../Assets/Icons/PNG/Logo-brainflix.png';
+import UserIcon from '../Assets/Images/Mohan-muruge.jpg';
+import SearchIcon from '../Assets/Icons/PNG/Icon-search.png';
 
 class Header extends React.Component {
   render() {
@@ -12,11 +14,17 @@ class Header extends React.Component {
             <img src = {BrainflixLogo}></img>
           </div>
           <div class = "header__search-upload-user">
-            <ul>
-              <li class = ""><input class = "header__search-bar__bar"type="text" id="video-name" name="video-name" size="20" placeholder="Please type here..."></input></li>
-              <li><button>upload</button></li>
-              <li>User Icon</li>
-            </ul>
+            <div class = "header__search-upload-user__search-bar">
+              <form>
+                <input type = "text" placeholder = "Search..."></input>
+              </form>
+            </div>
+            <div class = "header__search-upload-user__upload-button">
+              <button>Upload</button>
+            </div>
+            <div class = "header__search-upload-user__user-icon">
+              <img src = {UserIcon}></img>
+            </div>
           </div>
         </div>
         <div>Header Parent<HeaderChild /></div>
