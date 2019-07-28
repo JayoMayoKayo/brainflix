@@ -41,10 +41,14 @@
         width: 80%;
         li {
           display: inline-block;
-          width: 50%;
+          width: auto;
           img {
             margin-right: 8px;
           }
+        }
+        li:nth-child(2) {
+          margin-left: 8px;
+          color: $silver;
         }
       }
     }
@@ -60,7 +64,13 @@
         width: 80%;
         li {
           display: inline-block;
-          width: 50%;
+          width: auto;
+          img {
+            margin-right: 8px;
+          }
+        }
+        li:nth-child(2) {
+          margin-left: 24px;
         }
       }
     }

@@ -59,8 +59,10 @@ class CommentSectionCard extends React.Component {
           </div>
           <div class ="commentSectionCard__userComment">
             <div class ="commentSectionCard__userComment__name-date">
-              <h4>Gary Wong</h4>
-              <h4>12/18/2018</h4>
+              <ul>
+                <li><h4>Gary Wong</h4></li>  
+                <li><h4>12/18/2018</h4></li>  
+              </ul>
             </div>
             <div class ="commentSectionCard__userComment__text">
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 

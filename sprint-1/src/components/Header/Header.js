@@ -4,6 +4,7 @@ import '../App/App.scss';
 import BrainflixLogo from '../../Assets/Icons/PNG/Logo-brainflix.png';
 import UserIcon from '../../Assets/Images/Mohan-muruge.jpg';
 import SearchIcon from '../../Assets/Icons/PNG/Icon-search.png';
+import Upload from '../../Assets/Icons/PNG/Icon-upload.png';
 
 class Header extends React.Component {
   render() {
@@ -11,7 +12,7 @@ class Header extends React.Component {
       <>
         <div class = "header">
           <div class = "header__brainflix-logo">
-            <img src = {BrainflixLogo}></img>
+            <img src = {BrainflixLogo} alt = "BrainFlix Logo"></img>
           </div>
           <div class = "header__search-upload-user">
             <div class = "header__search-upload-user__search-bar">
@@ -23,7 +24,7 @@ class Header extends React.Component {
               <button>Upload</button>
             </div>
             <div class = "header__search-upload-user__user-icon">
-              <img src = {UserIcon}></img>
+              <img src = {UserIcon} alt = "User Icon"></img>
             </div>
           </div>
         </div>
