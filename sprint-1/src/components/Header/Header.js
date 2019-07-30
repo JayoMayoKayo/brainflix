@@ -10,20 +10,20 @@ class Header extends React.Component {
   render() {
     return (
       <>
-        <div class = "header">
-          <div class = "header__brainflix-logo">
+        <div className = "header">
+          <div className = "header__brainflix-logo">
             <img src = {BrainflixLogo} alt = "BrainFlix Logo"></img>
           </div>
-          <div class = "header__search-upload-user">
-            <div class = "header__search-upload-user__search-bar">
+          <div className = "header__search-upload-user">
+            <div className = "header__search-upload-user__search-bar">
               <form>
                 <input type = "text" placeholder = "Search..."></input>
               </form>
             </div>
-            <div class = "header__search-upload-user__upload-button">
+            <div className = "header__search-upload-user__upload-button">
               <button>Upload</button>
             </div>
-            <div class = "header__search-upload-user__user-icon">
+            <div className = "header__search-upload-user__user-icon">
               <img src = {UserIcon} alt = "User Icon"></img>
             </div>
           </div>

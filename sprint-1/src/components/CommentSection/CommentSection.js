@@ -7,7 +7,7 @@ class CommentSection extends React.Component {
   render() {
     return (
       <>
-        <div class = "commentSection">
+        <div className = "commentSection">
           <h2>3 Comments</h2>
           <CommentSectionInput />
           <CommentSectionList />
@@ -20,11 +20,11 @@ class CommentSectionInput extends React.Component {
   render() {
     return (
       <>
-        <div class = "commentSection__inputCard">
-          <div class ="commentSection__inputCard__icon">
+        <div className = "commentSection__inputCard">
+          <div className ="commentSection__inputCard__icon">
             <img src = {UserIcon}></img>
           </div>
-          <div class ="commentSection__inputCard__inputField">
+          <div className ="commentSection__inputCard__inputField">
             <form>
               <h4>JOIN THE CONVERSATION</h4>
               <input type = "text" placeholder = "Search..."></input>
@@ -40,7 +40,7 @@ class CommentSectionList extends React.Component {
   render() {
     return (
       <>
-        <div class = "commentSectionList">
+        <div className = "commentSectionList">
           <CommentSectionCard />
           <CommentSectionCard />
           <CommentSectionCard />
@@ -53,18 +53,18 @@ class CommentSectionCard extends React.Component {
   render () {
     return (
       <>
-        <div class = "commentSectionCard">
-          <div class = "commentSectionCard__user-Icon">
+        <div className = "commentSectionCard">
+          <div className = "commentSectionCard__user-Icon">
             <img src = {UserIcon}></img>
           </div>
-          <div class ="commentSectionCard__userComment">
-            <div class ="commentSectionCard__userComment__name-date">
+          <div className ="commentSectionCard__userComment">
+            <div className ="commentSectionCard__userComment__name-date">
               <ul>
                 <li><h4>Gary Wong</h4></li>  
                 <li><h4>12/18/2018</h4></li>  
               </ul>
             </div>
-            <div class ="commentSectionCard__userComment__text">
+            <div className ="commentSectionCard__userComment__text">
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
             </div>
