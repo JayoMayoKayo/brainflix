@@ -23,7 +23,7 @@ class App extends React.Component {
           <VideoSection MainVideoData = {this.state.MainVideoData} />
         </div> 
         <div>
-          <CommentSection />
+          <CommentSection MainVideoData = {this.state.MainVideoData}/>
         </div>
         <div>
           <SideVideos />

@@ -4,13 +4,20 @@ import App from '../App/App';
 import UserIcon from '../../Assets/Images/Mohan-muruge.jpg';
 
 class CommentSection extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      MainVideoData: props.MainVideoData
+    }
+  }
   render() {
     return (
       <>
         <div className = "commentSection">
-          <h2>3 Comments</h2>
+          <h2>{this.state.MainVideoData.comments.length} Comments</h2>
           <CommentSectionInput />
-          <CommentSectionList />
+          <CommentSectionList MainVideoData = {this.state.MainVideoData}/>
         </div>
       </>  
     );
@@ -38,12 +45,14 @@ class CommentSectionInput extends React.Component {
 }
 class CommentSectionList extends React.Component {
   render() {
+    //console.log('henlo' + this.props.MainVideoData.id);
     return (
       <>
         <div className = "commentSectionList">
-          <CommentSectionCard />
-          <CommentSectionCard />
-          <CommentSectionCard />
+          {
+            this.props.MainVideoData.comments.map(comments =>
+            <CommentSectionCard comments = {comments} />)
+          }
         </div>
       </>
     )
@@ -60,13 +69,12 @@ class CommentSectionCard extends React.Component {
           <div className ="commentSectionCard__userComment">
             <div className ="commentSectionCard__userComment__name-date">
               <ul>
-                <li><h4>Gary Wong</h4></li>  
-                <li><h4>12/18/2018</h4></li>  
+                <li><h4>{this.props.comments.userName}</h4></li>  
+                <li><h4>{this.props.comments.usertimestamp}</h4></li>  
               </ul>
             </div>
             <div className ="commentSectionCard__userComment__text">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              <p>{this.props.comments.usertext}</p>
             </div>
           </div>
         </div>
