@@ -6,6 +6,7 @@ import CommentSection from '../CommentSection/CommentSection';
 import SideVideos from '../SideVideos/SideVideos';
 import SideVideoData from '../Data/SideVideoData.js';
 import MainVideoData from '../Data/MainVideoData.js';
+import React from "react";
 
 class App extends React.Component {
   state = {

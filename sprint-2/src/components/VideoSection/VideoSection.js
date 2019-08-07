@@ -14,14 +14,10 @@ class VideoSection extends React.Component {
     }
   }
   render() {
-    //console.log("helloworl" + this.state.MainVideoData.id);
-    //console.log("helloworl" + this.state.MainVideoData.views);
     return (
       <>
         <div className = "video-section">
           <div className = "video-section__video">
-            {/*<p>{this.props.MainVideoData.id}</p>*/}
-            {/*<p>{this.state.MainVideoData.id}</p>*/}
             <VideoSectionVideo video = {this.state.MainVideoData.video}/>
           </div>
           <div className = "video-section__description">
