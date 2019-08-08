@@ -1,0 +1,103 @@
+@import '../GlobalStylings';
+
+.commentSection {
+    box-sizing: border-box;
+    margin-left: 16px;
+    margin-right: 16px;
+    .commentSection__inputCard {
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        border-bottom: 2px solid $silver;
+        padding-bottom: 24px;
+        .commentSection__inputCard__icon {
+            width: 20%;    
+            img {
+                height: 48px;
+                width: 48px;
+                border-radius: 24px;
+                margin-top: 32px;
+            }
+        }
+        .commentSection__inputCard__inputField {
+            width: 80%;
+            form {
+                
+                h4 {
+                    color: $silver;
+                    margin-top: 0px;
+                    margin-bottom: 8px;
+                }
+                input {
+                    width: 100%;
+                    border: 2px solid $brainFlixBlue;
+                    height: 64px;
+                    border-radius: 4px;
+                }
+                button {
+                    width: 100%;
+                    height: 48px;
+                    border-radius: 4px;
+                    margin-top: 16px;
+                    background-color: $brainFlixBlue;
+                    color: $alabaster;
+                    border: 2px solid $brainFlixBlue;
+                    h3 {
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+    .commentSectionCard {
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        border-bottom: 2px solid $silver;
+        .commentSectionCard__user-Icon {
+            width: 20%;
+            img {
+                width: 48px;
+                height: 48px;
+                border-radius: 24px;
+                margin-top: 24px;
+            }
+        }
+        .commentSectionCard__userComment {
+            width: 80%;
+            h4 {
+                display: inline-block;
+                box-sizing: border-box;
+            }
+            ul {
+                box-sizing: border-box;
+                list-style-type: none;
+                list-style: none;
+                text-decoration: none;
+                margin: 0px;
+                padding: 0px;
+                li {
+                    display: inline-block;
+                    width: 50%;
+                    h4 {
+                        margin-top: 24px;
+                        margin-bottom: 0px;
+                    }
+                }
+                li:nth-child(2) {
+                    color: $silver;
+                    text-align: right;
+                }
+            }
+            .commentSectionCard__userComment__text {
+                box-sizing: border-box;
+                margin-bottom: 24px;
+                p {
+                    margin-top: 8px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
