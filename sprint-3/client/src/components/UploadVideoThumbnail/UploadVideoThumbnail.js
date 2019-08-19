@@ -10,3 +10,4 @@ class UploadVideoThumbnail extends React.Component {
     );
   }
 }
+export default UploadVideoThumbnail;
