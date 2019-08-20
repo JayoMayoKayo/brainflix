@@ -1,34 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.scss';
-import Header from '../Header/Header';
-import VideoSection from '../VideoSection/VideoSection';
-import CommentSection from '../CommentSection/CommentSection';
-import SideVideos from '../SideVideos/SideVideos';
-import SideVideoData from '../Data/SideVideoData.js';
-import MainVideoData from '../Data/MainVideoData.js';
-import AppRouter from '../AppRouter/AppRouter.js'
+import AppRouter from '../AppRouter/AppRouter.js';
+import HomePage from '../HomePage/HomePage.js';
 
 class App extends React.Component {
-  state = {
-    SideVideoData: SideVideoData,
-    MainVideoData: MainVideoData
-  };
-  render() {
-    //console.log(this.state.MainVideoData.id);
+  render() {  
     return (
       <>
-        <div>
-          <Header />
-        </div>
-        <div>
-          <VideoSection MainVideoData = {this.state.MainVideoData} />
-        </div> 
-        <div>
-          <CommentSection MainVideoData = {this.state.MainVideoData}/>
-        </div>
-        <div>
-          <SideVideos />
-        </div>  
+        <AppRouter />
+        <HomePage />
+           
       </>
     );
   }

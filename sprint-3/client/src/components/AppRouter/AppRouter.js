@@ -1,16 +1,18 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import App from '../App/App.js';
-import UploadVideoPage from '../UploadVideoPage/UploadVideoPage.js';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import HomePage from '../HomePage/HomePage.js';
+import UploadPage from '../UploadPage/UploadPage.js';
 
 class AppRouter extends React.Component {
   render() {
     return (
-      <Router>
-        <Route path="/" component={App} />
-        <Route path="/UploadVideo" component={UploadVideoPage} />
-      </Router>
+        <Router>
+            <Switch>
+                <Route path="/" exact Component={HomePage} />
+                <Route path="/UploadPage" Component={UploadPage} />
+            </Switch>
+        </Router>
     );
   }
-} 
+}
 export default AppRouter;
