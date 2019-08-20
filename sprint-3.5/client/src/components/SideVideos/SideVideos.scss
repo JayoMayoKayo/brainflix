@@ -1,0 +1,42 @@
+@import '../../GlobalStylings';
+
+.sideVideos {
+  box-sizing: border-box;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-top: 40px;
+  h3 {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    width: 100%;
+    color: $silver;
+  }
+  .sideVideoCard {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 24px;
+
+    .sideVideoCard__preview {
+      width: 45%;
+
+      img {
+        width: 120px;
+        height: 70px;
+        border-radius: 4px;
+      }
+    }
+    .sideVideoCard__text {
+      box-sizing: border-box;
+      margin-left: 16px;
+      h5 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      p {
+        margin-top: 16px;
+        margin-bottom: 0px;
+      }   
+    }
+  }
+}

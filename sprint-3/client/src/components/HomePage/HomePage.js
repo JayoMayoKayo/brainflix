@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../Header/Header';
+import Header from '../Header/Header.js';
 import VideoSection from '../VideoSection/VideoSection';
 import CommentSection from '../CommentSection/CommentSection';
 import SideVideos from '../SideVideos/SideVideos';
@@ -14,6 +14,7 @@ class HomePage extends React.Component {
   render() {
     return (
       <>
+        <p>hello world</p>
         <div>
           <Header />
         </div>

@@ -1,0 +1,31 @@
+//Font of the website, to be included in all components
+@font-face {
+    font-family: "avenirNextRegular";
+    src: url('../src/Assets/Fonts/Linotype\ -\ AvenirNextLTPro-Regular.otf') format('opentype'),
+        //url('../Fonts/Alternative\ files/AvenirNextLTPro-Regular.ttf') format('truetype'),
+        url('https://fonts.google.com/specimen/Roboto');
+}
+@font-face {
+    font-family: "avenirNextDemiBold";
+    src: url('../src/Assets/Fonts/Linotype\ -\ AvenirNextLTPro-Demi.otf') format('opentype'),
+        //url('../Fonts/Alternative\ files/avenirNextDemiBold.ttf') format('truetype'),
+        url('https://fonts.google.com/specimen/Roboto');
+}
+@font-face {
+    font-family: "avenirNextBold";
+    src: url('../src/Assets/Fonts/Linotype\ -\ AvenirNextLTPro-Bold.otf') format('opentype'),
+        //url('../Fonts/Alternative\ files/AvenirNextLTPro-Bold.ttf') format('truetype'),
+        url('https://fonts.google.com/specimen/Roboto');
+}
+  
+//Global Colors
+$black: #323232; //Paragraph Text
+$silver: #AFAFAF; //Text Label Style
+$mercury: #E1E1E1; //Text field border
+$alabaster: #FAFAFA; // Text Field Background Fill
+//BrainFlix
+$black: #323232; //Navigation background fill
+$brainFlixBlue: #0095FF; //Primary CTA and Text Link
+$brainFlixBlueDark: #0065AD; //Primary CTA Hover
+
+ 
